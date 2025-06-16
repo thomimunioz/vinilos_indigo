@@ -1,0 +1,173 @@
+$amarillo: #f4e04d;
+$amarillo-hover: #ffcc00;
+$negro: #1c1c1c;
+$gris-fondo: #f9f5f0;
+$gris-form: #fffbea;
+$gris-borde: #ddd;
+$rojo: #ba1f1f;
+
+$fuente-principal: 'Open Sans', sans-serif;
+$fuente-secundaria: 'Righteous', cursive;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: $gris-fondo;
+  color: #2e2e2e;
+  line-height: 1.6;
+}
+
+.navbar-expand-custom {
+  .navbar-collapse {
+    display: none !important;
+    flex-basis: 100%;
+    flex-grow: 1;
+
+    &.collapse.show {
+      display: block !important;
+    }
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    display: flex;
+    gap: 1rem;
+
+    .nav-item {
+      display: block;
+    }
+  }
+
+  .navbar-toggler {
+    display: block;
+
+    .navbar-toggler-icon {
+      filter: brightness(200%);
+    }
+  }
+
+  @media (min-width: 1301px) {
+    .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto !important;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .navbar-toggler {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.custom-link {
+  color: $amarillo !important;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: $fuente-principal;
+  font-size: 18px;
+  margin-left: 30px;
+
+  &:hover {
+    color: $amarillo-hover !important;
+    text-shadow: 0 0 3px $amarillo-hover;
+  }
+}
+
+.search-bar {
+  max-width: 400px;
+}
+
+.search-input {
+  flex: 1;
+}
+
+.contacto-title {
+  font-family: $fuente-secundaria;
+  font-size: 40px;
+}
+
+.contacto-subtitle {
+  font-family: $fuente-principal;
+  font-size: 20px;
+}
+
+.contact-form {
+  padding: 30px;
+  background-color: $gris-form;
+  border: 1px solid $gris-borde;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 40px auto;
+
+  label {
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    font-family: $fuente-principal;
+  }
+
+  button[type="submit"] {
+    background-color: $negro;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $amarillo;
+      color: $negro;
+    }
+  }
+}
+
+.footer-vintage {
+  background-color: $negro;
+  color: #f4f1e9;
+  font-family: $fuente-principal;
+  padding-top: 30px;
+  font-size: 14px;
+
+  .marca-footer {
+    font-family: $fuente-secundaria;
+    font-size: 20px;
+    color: $amarillo;
+    margin-bottom: 5px;
+  }
+
+  .slogan-footer {
+    font-style: italic;
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 0;
+  }
+
+  .footer-redes i {
+    font-size: 20px;
+    color: $amarillo;
+    transition: color 0.3s;
+    margin-top: 10px;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .divider-footer {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}

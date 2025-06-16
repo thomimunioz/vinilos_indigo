@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9f5f0;
+    color: #2e2e2e;
+    line-height: 1.6;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.custom-link{
+    color: #f4e04d !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.custom-link:hover{
+    color: #ffcc00 !important;
+    text-shadow: 0 0 3px #ffcc00;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    filter: brightness(200%);
+}
+
+.search-input{
+    width: 300px !important;
+}
+
+.nav a {
+    color: #f4e04d;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.nav a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 3px #ffcc00;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+.reseñas-title{
+    font-family: 'Righteous';
+    font-size: 40px;
+}
+
+.btn-comprar-simple{
+    background-color: #ba1f1f;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-comprar-simple:hover{
+    background-color: #f4e04d;
+    color: #2e2e2e;
+}
+
+.footer-vintage{
+    background-color: #1c1c1c;
+    color: #f4f1e9;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 30px;
+    font-size: 14px;
+}
+
+.marca-footer{
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    color: #f4e04d;
+    margin-bottom: 5px;
+}
+
+.slogan-footer{
+    font-style: italic;
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 0;
+}
+
+.footer-redes i{
+    font-size: 20px;
+    color: #f4e04d;
+    transition: color 0.3s;
+    margin-top: 10px;
+}
+
+.footer-redes i:hover{
+    color: #ffffff;
+}
+
+.divider-footer {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1301px) {
+  .navbar-expand-custom .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto !important;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+
+  .navbar-expand-custom .navbar-nav {
+    flex-direction: row;
+    display: flex;
+    gap: 1rem;
+  }
+
+
+  .navbar-expand-custom .navbar-nav .nav-item {
+    display: block;
+  }
+
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
+}

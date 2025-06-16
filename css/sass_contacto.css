@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f9f5f0;
+  color: #2e2e2e;
+  line-height: 1.6;
+}
+
+.navbar-expand-custom .navbar-collapse {
+  display: none !important;
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+.navbar-expand-custom .navbar-collapse.collapse.show {
+  display: block !important;
+}
+.navbar-expand-custom .navbar-nav {
+  flex-direction: row;
+  display: flex;
+  gap: 1rem;
+}
+.navbar-expand-custom .navbar-nav .nav-item {
+  display: block;
+}
+.navbar-expand-custom .navbar-toggler {
+  display: block;
+}
+.navbar-expand-custom .navbar-toggler .navbar-toggler-icon {
+  filter: brightness(200%);
+}
+@media (min-width: 1301px) {
+  .navbar-expand-custom .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto !important;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.custom-link {
+  color: #f4e04d !important;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin-left: 30px;
+}
+.custom-link:hover {
+  color: #ffcc00 !important;
+  text-shadow: 0 0 3px #ffcc00;
+}
+
+.search-bar {
+  max-width: 400px;
+}
+
+.search-input {
+  flex: 1;
+}
+
+.contacto-title {
+  font-family: "Righteous", cursive;
+  font-size: 40px;
+}
+
+.contacto-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.contact-form {
+  padding: 30px;
+  background-color: #fffbea;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+.contact-form label {
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  font-family: "Open Sans", sans-serif;
+}
+.contact-form button[type=submit] {
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.contact-form button[type=submit]:hover {
+  background-color: #f4e04d;
+  color: #1c1c1c;
+}
+
+.footer-vintage {
+  background-color: #1c1c1c;
+  color: #f4f1e9;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 30px;
+  font-size: 14px;
+}
+.footer-vintage .marca-footer {
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+  color: #f4e04d;
+  margin-bottom: 5px;
+}
+.footer-vintage .slogan-footer {
+  font-style: italic;
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 0;
+}
+.footer-vintage .footer-redes i {
+  font-size: 20px;
+  color: #f4e04d;
+  transition: color 0.3s;
+  margin-top: 10px;
+}
+.footer-vintage .footer-redes i:hover {
+  color: white;
+}
+.footer-vintage .divider-footer {
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=sass_contacto.css.map */
