@@ -119,6 +119,16 @@ body {
 }
 
 .btn-comprar {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding: 12px 0;
+  text-align: center;
+  background-color: #ba1f1f;
+  color: white;
   position: absolute;
   bottom: 15px;
   left: 50%;
@@ -127,18 +137,11 @@ body {
   height: 10%;
   background-color: #ba1f1f;
   color: white;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
   font-size: 16px;
-  padding: 12px 0;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
 }
 .btn-comprar:hover {
   background-color: #f4e04d;
   color: #2e2e2e;
-  border: none;
 }
 
 .destacados {
@@ -201,15 +204,20 @@ body {
 }
 
 .btn-comprar-simple {
-  background-color: #ba1f1f;
-  color: white;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
-  border-radius: 8px;
-  padding: 8px 16px;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  padding: 8px 16px;
+  text-align: center;
+  background-color: #ba1f1f;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #ba1f1f;
+  color: white;
 }
 .btn-comprar-simple:hover {
   background-color: #f4e04d;

@@ -1,13 +1,9 @@
-$amarillo: #f4e04d;
+$primary-font-family: "Open Sans", sans-serif;
+$secondary-font-family: "Righteous", sans-serif;
+$amarillo-principal: #f4e04d;
 $amarillo-hover: #ffcc00;
-$negro: #1c1c1c;
-$gris-fondo: #f9f5f0;
-$gris-form: #fffbea;
-$gris-borde: #ddd;
-$rojo: #ba1f1f;
-
-$fuente-principal: 'Open Sans', sans-serif;
-$fuente-secundaria: 'Righteous', cursive;
+$rojo-principal: #ba1f1f;
+$rojo-secundario: #d43434;
 
 * {
   margin: 0;
@@ -17,7 +13,7 @@ $fuente-secundaria: 'Righteous', cursive;
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: $gris-fondo;
+  background-color: #f9f5f0;
   color: #2e2e2e;
   line-height: 1.6;
 }
@@ -71,10 +67,10 @@ body {
 }
 
 .custom-link {
-  color: $amarillo !important;
+  color: $amarillo-principal !important;
   text-decoration: none;
   font-weight: 700;
-  font-family: $fuente-principal;
+  font-family: $primary-font-family;
   font-size: 18px;
   margin-left: 30px;
 
@@ -93,19 +89,19 @@ body {
 }
 
 .contacto-title {
-  font-family: $fuente-secundaria;
+  font-family: $secondary-font-family;
   font-size: 40px;
 }
 
 .contacto-subtitle {
-  font-family: $fuente-principal;
+  font-family: $primary-font-family;
   font-size: 20px;
 }
 
 .contact-form {
   padding: 30px;
-  background-color: $gris-form;
-  border: 1px solid $gris-borde;
+  background-color: #fffbea;
+  border: 1px solid #ddd;
   border-radius: 8px;
   max-width: 800px;
   margin: 40px auto;
@@ -116,34 +112,34 @@ body {
 
   input,
   textarea {
-    font-family: $fuente-principal;
+    font-family: $primary-font-family;
   }
 
   button[type="submit"] {
-    background-color: $negro;
+    background-color: $rojo-principal;
     color: white;
     border: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: $amarillo;
-      color: $negro;
+      background-color: $amarillo-principal;
+      color: #1c1c1c;
     }
   }
 }
 
 .footer-vintage {
-  background-color: $negro;
+  background-color: #1c1c1c;
   color: #f4f1e9;
-  font-family: $fuente-principal;
+  font-family: $primary-font-family;
   padding-top: 30px;
   font-size: 14px;
 
   .marca-footer {
-    font-family: $fuente-secundaria;
+    font-family: $secondary-font-family;
     font-size: 20px;
-    color: $amarillo;
+    color: $amarillo-principal;
     margin-bottom: 5px;
   }
 
@@ -156,7 +152,7 @@ body {
 
   .footer-redes i {
     font-size: 20px;
-    color: $amarillo;
+    color: $amarillo-principal;
     transition: color 0.3s;
     margin-top: 10px;
 

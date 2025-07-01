@@ -1,17 +1,9 @@
-$color-bg-body: #f9f5f0;
-$color-text: #2e2e2e;
-$color-yellow: #f4e04d;
-$color-yellow-hover: #ffcc00;
-$color-dark: #1d1d1d;
-$color-dark-footer: #1c1c1c;
-$color-btn-bg: #ba1f1f;
-$color-btn-hover-bg: #f4e04d;
-$color-btn-hover-text: #2e2e2e;
-$color-footer-text-muted: #bbb;
-$color-footer-divider: #444;
-$color-gray-light: #ccc;
-$color-gray-dark: #333;
-$color-thumb-border: #777;
+$primary-font-family: "Open Sans", sans-serif;
+$secondary-font-family: "Righteous", sans-serif;
+$amarillo-principal: #f4e04d;
+$amarillo-hover: #ffcc00;
+$rojo-principal: #ba1f1f;
+$rojo-secundario: #d43434;
 
 * {
   margin: 0;
@@ -21,8 +13,8 @@ $color-thumb-border: #777;
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: $color-bg-body;
-  color: $color-text;
+  background-color: #f9f5f0;
+  color: #2e2e2e;
   line-height: 1.6;
 }
 
@@ -70,16 +62,16 @@ body {
 
 .custom-link,
 .nav a {
-  color: $color-yellow !important;
+  color: $amarillo-principal !important;
   text-decoration: none;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
+  font-family: $primary-font-family;
   font-size: 18px;
   margin-left: 30px;
 
   &:hover {
-    color: $color-yellow-hover !important;
-    text-shadow: 0 0 3px $color-yellow-hover;
+    color: $amarillo-hover !important;
+    text-shadow: 0 0 3px $amarillo-hover;
   }
 }
 
@@ -93,13 +85,13 @@ body {
 }
 
 .catalogo-title {
-  font-family: 'Righteous';
+  font-family: $secondary-font-family;
   font-size: 40px;
   margin-left: 20px;
 }
 
 .catalogo-subtitle {
-  font-family: "Open Sans", sans-serif;
+  font-family: $primary-font-family;
   margin-left: 20px;
   font-size: 15px;
 }
@@ -113,10 +105,10 @@ body {
 }
 
 .filtros-panel {
-  background-color: $color-dark;
+  background-color: #1d1d1d;
   border-radius: 12px;
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: $primary-font-family;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-left: 1rem;
   position: sticky;
@@ -124,21 +116,21 @@ body {
   z-index: 10;
 
   .titulo-filtros {
-    font-family: "Righteous", sans-serif;
+    font-family: $secondary-font-family;
     font-size: 22px;
-    border-bottom: 1px solid $color-yellow;
+    border-bottom: 1px solid $amarillo-principal;
     padding-bottom: 8px;
   }
 
   label {
     font-size: 14px;
-    color: $color-yellow;
+    color: $amarillo-principal;
   }
 
   input,
   select {
     font-size: 14px;
-    background-color: $color-gray-dark;
+    background-color: #333;
     color: white;
     border-radius: 8px;
     padding: 6px 10px;
@@ -149,12 +141,12 @@ body {
   }
 
   .btn {
-    border: 1px solid $color-yellow;
-    color: $color-yellow;
+    border: 1px solid $amarillo-principal;
+    color: $amarillo-principal;
 
     &:hover {
-      background-color: $color-yellow;
-      color: $color-dark;
+      background-color: $amarillo-principal;
+      color: #1d1d1d;
     }
   }
 
@@ -169,7 +161,7 @@ body {
     input[type="range"] {
       width: 100%;
       height: 6px;
-      background-color: $color-gray-dark;
+      background-color: #333;
       border-radius: 3px;
       outline: none;
 
@@ -178,7 +170,7 @@ body {
         width: 15px;
         height: 15px;
         background-color: #f8f8f8;
-        border: 2px solid $color-thumb-border;
+        border: 2px solid #777;
         border-radius: 50%;
         cursor: pointer;
       }
@@ -197,7 +189,7 @@ body {
 }
 
 .tarjeta-disco {
-  border: 1px solid $color-gray-light;
+  border: 1px solid #ccc;
   border-radius: 12px;
   padding: 16px;
   background-color: #fff;
@@ -225,19 +217,19 @@ body {
   h2 {
     font-size: 15px;
     font-weight: 600;
-    font-family: "Open Sans", sans-serif;
+    font-family: $primary-font-family;
     margin-bottom: 6px;
   }
 
   h3 {
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    color: #d43434;
+    font-family: $primary-font-family;
+    color: $rojo-secundario;
     margin-bottom: 8px;
   }
 
   p {
-    font-family: "Open Sans", sans-serif;
+    font-family: $primary-font-family;
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 12px;
@@ -246,15 +238,15 @@ body {
 
 .linea {
   height: 1px;
-  background-color: $color-gray-light;
+  background-color: #ccc;
   margin: 8px auto;
   width: 60%;
 }
 
 .btn-comprar-simple {
-  background-color: $color-btn-bg;
+  background-color: $rojo-principal;
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: $primary-font-family;
   font-weight: 600;
   border: none;
   border-radius: 8px;
@@ -263,29 +255,29 @@ body {
   transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: $color-btn-hover-bg;
-    color: $color-btn-hover-text;
+    background-color: $amarillo-principal;
+    color: #2e2e2e;
   }
 }
 
 .footer-vintage {
-  background-color: $color-dark-footer;
+  background-color: #1c1c1c;
   color: #f4f1e9;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $primary-font-family;
   padding-top: 30px;
   font-size: 14px;
 
   .marca-footer {
-    font-family: 'Righteous', cursive;
+    font-family: $secondary-font-family;
     font-size: 20px;
-    color: $color-yellow;
+    color: $amarillo-principal;
     margin-bottom: 5px;
   }
 
   .slogan-footer {
     font-style: italic;
     font-size: 14px;
-    color: $color-footer-text-muted;
+    color: #bbb;
     margin-bottom: 0;
   }
 
@@ -301,7 +293,7 @@ body {
       a {
         i {
           font-size: 20px;
-          color: $color-yellow;
+          color: $amarillo-principal;
           transition: color 0.3s;
           margin-top: 10px;
 
@@ -314,7 +306,7 @@ body {
   }
 
   .divider-footer {
-    border-top: 1px solid $color-footer-divider;
+    border-top: 1px solid #444;
     margin-top: 20px;
     margin-bottom: 10px;
   }

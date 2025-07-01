@@ -1,3 +1,10 @@
+$primary-font-family: "Open Sans", sans-serif;
+$secondary-font-family: "Righteous", sans-serif;
+$amarillo-principal: #f4e04d;
+$amarillo-hover: #ffcc00;
+$rojo-principal: #ba1f1f;
+$rojo-secundario: #d43434;
+
 body {
   font-family: 'Courier New', Courier, monospace;
   background-color: #f9f5f0;
@@ -6,16 +13,16 @@ body {
 }
 
 .custom-link {
-  color: #f4e04d !important;
+  color: $amarillo-principal !important;
   text-decoration: none;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
+  font-family: $primary-font-family;
   font-size: 18px;
   margin-left: 30px;
 
   &:hover {
-    color: #ffcc00 !important;
-    text-shadow: 0 0 3px #ffcc00;
+    color: $amarillo-hover !important;
+    text-shadow: 0 0 3px $amarillo-hover;
   }
 }
 
@@ -26,7 +33,7 @@ body {
 }
 
 .search-bar {
-  max-width: 400px;
+  max-width: 400px !important;
 }
 
 .search-input {
@@ -46,7 +53,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  font-family: 'Open Sans', sans-serif;
+  font-family: $primary-font-family;
   transition: all 0.3s ease;
 
   &:hover {
@@ -83,7 +90,7 @@ body {
       transition: border-color 0.2s;
 
       &:focus {
-        border-color: #f4e04d;
+        border-color: $amarillo-principal;
         outline: none;
         box-shadow: 0 0 0 2px rgba(244, 224, 77, 0.3);
       }
@@ -94,7 +101,7 @@ body {
     width: 100%;
     padding: 12px;
     background-color: #2e2e2e;
-    color: #f4e04d;
+    color: $amarillo-principal;
     border: none;
     border-radius: 8px;
     font-size: 1.1em;
@@ -120,7 +127,7 @@ body {
       margin-top: 8px;
 
       &:hover {
-        color: #f4e04d;
+        color: $amarillo-principal;
       }
     }
   }
@@ -129,14 +136,14 @@ body {
 .footer-vintage {
   background-color: #1c1c1c;
   color: #f4f1e9;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $primary-font-family;
   padding-top: 30px;
   font-size: 14px;
 
   .marca-footer {
-    font-family: 'Righteous', cursive;
+    font-family: $secondary-font-family;
     font-size: 20px;
-    color: #f4e04d;
+    color: $amarillo-principal;
     margin-bottom: 5px;
   }
 
@@ -150,7 +157,7 @@ body {
   .footer-redes {
     i {
       font-size: 20px;
-      color: #f4e04d;
+      color: $amarillo-principal;
       transition: color 0.3s;
       margin-top: 10px;
 

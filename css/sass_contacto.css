@@ -72,7 +72,7 @@ body {
 }
 
 .contacto-title {
-  font-family: "Righteous", cursive;
+  font-family: "Righteous", sans-serif;
   font-size: 40px;
 }
 
@@ -97,7 +97,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 .contact-form button[type=submit] {
-  background-color: #1c1c1c;
+  background-color: #ba1f1f;
   color: white;
   border: none;
   font-weight: bold;
@@ -116,7 +116,7 @@ body {
   font-size: 14px;
 }
 .footer-vintage .marca-footer {
-  font-family: "Righteous", cursive;
+  font-family: "Righteous", sans-serif;
   font-size: 20px;
   color: #f4e04d;
   margin-bottom: 5px;

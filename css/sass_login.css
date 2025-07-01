@@ -23,7 +23,7 @@ body {
 }
 
 .search-bar {
-  max-width: 400px;
+  max-width: 400px !important;
 }
 
 .search-input {
@@ -120,7 +120,7 @@ body {
   font-size: 14px;
 }
 .footer-vintage .marca-footer {
-  font-family: "Righteous", cursive;
+  font-family: "Righteous", sans-serif;
   font-size: 20px;
   color: #f4e04d;
   margin-bottom: 5px;

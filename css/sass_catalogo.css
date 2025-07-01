@@ -69,7 +69,7 @@ body {
 }
 
 .catalogo-title {
-  font-family: "Righteous";
+  font-family: "Righteous", sans-serif;
   font-size: 40px;
   margin-left: 20px;
 }
@@ -232,7 +232,7 @@ body {
   font-size: 14px;
 }
 .footer-vintage .marca-footer {
-  font-family: "Righteous", cursive;
+  font-family: "Righteous", sans-serif;
   font-size: 20px;
   color: #f4e04d;
   margin-bottom: 5px;
