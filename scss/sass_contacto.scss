@@ -5,6 +5,11 @@ $amarillo-hover: #ffcc00;
 $rojo-principal: #ba1f1f;
 $rojo-secundario: #d43434;
 
+%link-base {
+  color: $amarillo-principal;
+  font-family: $primary-font-family;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -67,10 +72,10 @@ body {
 }
 
 .custom-link {
+  @extend %link-base;
   color: $amarillo-principal !important;
   text-decoration: none;
   font-weight: 700;
-  font-family: $primary-font-family;
   font-size: 18px;
   margin-left: 30px;
 

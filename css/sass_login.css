@@ -6,6 +6,8 @@ body {
 }
 
 .custom-link {
+  color: #f4e04d;
+  font-family: "Open Sans", sans-serif;
   color: #f4e04d !important;
   text-decoration: none;
   font-weight: 700;

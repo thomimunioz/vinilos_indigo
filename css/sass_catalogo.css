@@ -1,3 +1,9 @@
+.custom-link,
+.nav a {
+  color: #f4e04d;
+  font-family: "Open Sans", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +55,6 @@ body {
   color: #f4e04d !important;
   text-decoration: none;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   margin-left: 30px;
 }

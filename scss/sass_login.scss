@@ -5,6 +5,11 @@ $amarillo-hover: #ffcc00;
 $rojo-principal: #ba1f1f;
 $rojo-secundario: #d43434;
 
+@mixin link($color, $font-family){
+  color: $color;
+  font-family: $font-family;
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
   background-color: #f9f5f0;
@@ -13,6 +18,7 @@ body {
 }
 
 .custom-link {
+  @include link($amarillo-principal, $primary-font-family);
   color: $amarillo-principal !important;
   text-decoration: none;
   font-weight: 700;
